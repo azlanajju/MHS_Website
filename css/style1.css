@@ -111,10 +111,6 @@
     border-color: var(--primary);
 }
 
-.page-header {
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../img/1bg.jpg) center center no-repeat;
-    background-size: cover;
-}
 
 .breadcrumb-item + .breadcrumb-item::before {
     color: var(--light);
