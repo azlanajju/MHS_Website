@@ -231,10 +231,9 @@ p {
 }
 
 .toptwo img {
-    max-width: 500px;
-    /* Fixed image width */
+    max-width: 100%;
     max-height: 500px;
-    /* Fixed image height */
+    /* Adjust the maximum height as needed */
     border-radius: 8px;
     margin-right: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -275,11 +274,13 @@ p {
     .toptwo {
         flex-direction: column;
         align-items: flex-start;
+        padding: 20px;
     }
 
     .toptwo img {
-        margin-right: 0;
-        margin-bottom: 20px;
+        max-width: 100%;
+        max-height: none;
+        margin: 0 auto 20px;
     }
 
     .toptwo-content {
@@ -310,20 +311,8 @@ p {
     /* Allow both sections to grow to fill available height */
 }
 
-/* @media (max-width: 768px) { */
-/* .flex-container { */
-/* justify-content: flex-start; */
-/* Adjust alignment for smaller screens */
-/* } */
-/* } */
 
-/*
-@media (max-width: 768px) {
-    .toptwo,
-    .services-tab-view {
-        flex-basis: 100%; /* Stack elements in full width */
-/* } */
-/* } */
+
 
 
 @media (max-width: 768px) {
@@ -354,6 +343,8 @@ p {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     /* Remove the margin-left */
     height: fit-content;
+    margin-right: 30px;
+    flex-basis: 100%; /* Change to occupy full width on smaller screens */
 }
 
 .tab-option {
@@ -366,6 +357,11 @@ p {
     color: #333;
     border-bottom: 1px solid #ccc;
     /* Add a border to the bottom */
+    height: calc(100% - 40px); /* Adjust the height of the colored strip */
+    border-bottom: none; /* Remove border-bottom for a cleaner look */
+
+
+    
 }
 
 .tab-option::before {
@@ -406,3 +402,59 @@ p {
 .services-tab-view li {
     list-style: none;
 }
+
+@media (min-width: 768px) {
+    .services-tab-view {
+        flex-basis: 30%; /* Restore width on larger screens */
+    }
+
+    .tab-option {
+        border-bottom: 1px solid #ccc; /* Add back the border for larger screens */
+    }
+}
+
+
+
+/* ---------------top three -----------------------  */
+
+    /* styles.css */
+
+    .topthree {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: #f9f9f9;
+        padding: 30px;
+        margin: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .topthree img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    .topthree img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1; /* Set a fixed aspect ratio of 1:1 (square) */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section-header p {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        color: #666;
+        line-height: 1.6;
+    }
