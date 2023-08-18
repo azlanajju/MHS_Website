@@ -2120,8 +2120,7 @@ a:focus {
 }
 
 .footer .footer-contact,
-.footer .footer-link,
-.footer .newsletter {
+.footer .footer-link {
     position: relative;
     margin-bottom: 45px;
 }
@@ -2199,35 +2198,7 @@ a:focus {
     color: #333;
 }
 
-.footer .newsletter .form {
-    position: relative;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.footer .newsletter input {
-    height: 50px;
-    border: 2px solid #121518;
-    border-radius: 0;
-}
-
-.footer .newsletter .btn {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    height: 40px;
-    padding: 8px 10px;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: teal;
-    background: #121518;
-    border-radius: 0;
-    border: 2px solid teal;
-    transition: .3s;
-}
-
-.footer .newsletter .btn:hover {
+.footer .btn:hover {
     color: #121518;
     background: teal;
 }
