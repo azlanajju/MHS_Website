@@ -181,6 +181,8 @@ body {
     /* This property maintains the aspect ratio while filling the container */
 }
 
+
+
 .toponeimg {
     max-width: 100%;
     border-radius: 10px;
@@ -212,6 +214,10 @@ p {
         padding-right: 40px;
     }
 }
+
+
+ /* ======== top section satellite ===== */
+ 
 
 
 /* =========== TOP TWO =============== */

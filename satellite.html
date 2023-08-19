@@ -26,14 +26,14 @@
         rel="stylesheet"> -->
 
     <!-- CSS Libraries -->
-     <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link href="lib/slick/slick.css" rel="stylesheet">
-    <link href="lib/slick/slick-theme.css" rel="stylesheet"> 
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style2.css" rel="stylesheet">
@@ -178,46 +178,138 @@
         <!-- Nav Bar End -->
 
 
-<!-- body *************************begin  -->
+        <!-- body *************************begin  -->
 
-    <!-- Page Header Start -->
-    <style>
-        .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(./img/Sate04.jpg) center center no-repeat;
-    background-size: cover;
-}
-    </style>
-    <div class="container-fluid page-header mb-5 py-5">
-        <div class="container">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Satellite Imaging</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb text-uppercase">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">Services</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-    <!-- Page Header End -->
-
-
-
-    <!-- topone start  -->
-        <div class="top-section">
-            <div class="content-wrapper">
-                <div class="text-content">
-                    <h1>Discover the Possibilities</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eligendi excepturi non rerum explicabo libero cum quos vero nisi. Cupiditate corporis nobis natus saepe assumenda in unde eos illo tempora! This is some text content on the left side.</p>
-                </div>
-                <div class="image-content">
-                    <img class="toponeimg" src="./img/about.jpg" alt="Image">
-                </div>
+        <!-- Page Header Start -->
+        <style>
+            .page-header {
+                background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(./img/Sate04.jpg) center center no-repeat;
+                background-size: cover;
+            }
+        </style>
+        <div class="container-fluid page-header mb-5 py-5">
+            <div class="container">
+                <h1 class="display-3 text-white mb-3 animated slideInDown">Satellite Imaging</h1>
+                <nav aria-label="breadcrumb animated slideInDown">
+                    <ol class="breadcrumb text-uppercase">
+                        <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Services</li>
+                    </ol>
+                </nav>
             </div>
         </div>
-    <!-- topone start  -->
+        <!-- Page Header End -->
 
-    <!-- body -************************ end  -->
+        <style>
+            .satelliteImage {
+                max-width: 70%;
+                border-radius: 10px;
+                margin-right: 20px;
+            }
+
+            .top-section-sat {
+                display: flex;
+                flex-direction: row;
+                margin: 20px;
+            }
+
+            /* Default styles for larger screens */
+            .services-tab-view ul {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .services-tab-view li {
+                flex: 0 0 33.33%;
+                /* Display three columns on larger screens */
+            }
+
+            /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+            @media (max-width: 768px) {
+                .services-tab-view ul {
+                    display: block;
+                    width: 100%;
+                    /* Display services in a single column for mobile */
+                }
+
+                .satelliteImage {
+                    border-radius: 10px;
+                    margin: 0px;
+                    width: 100%;
+                    /* Make the image width 100% of the parent div */
+                    height: 100%;
+                    /* Make the image height 100% of the parent div */
+                    object-fit: cover;
+                }
+
+                .top-section-sat {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 20px;
+                    align-items: center;
+                }
+
+                .services-tab-view li {
+                    width: 100%;
+                    /* Full width for mobile */
+                }
+            }
+        </style>
+
+        <!-- topone start  -->
+        <div class="top-section-sat">
+            <img src="./img/satellite.jpg" alt="satellite" class="satelliteImage">
+            <div class="services-tab-view">
+                <!-- Content of the services-tab-view div -->
+                <ul>
+                    <a href="em-surveys.html">
+                        <li class="tab-option">Electromagnetics (EM)</li>
+                    </a>
+                    <a href="ert-surveys.html">
+                        <li class="tab-option">Resistivity (RT)</li>
+                    </a>
+                    <a href="gpr-surveys.html">
+                        <li class="tab-option">Ground Penetration Radar (GPR)</li>
+                    </a>
+                    <a href="volume.html">
+                        <li class="tab-option">3D Modelling</li>
+                    </a>
+                    <a href="seismic.html">
+                        <li class="tab-option">Seismic Refraction</li>
+                    </a>
+                    <a href="magnetics.html">
+                        <li class="tab-option">Magnetics</li>
+                    </a>
+                    <a href="downhole.html">
+                        <li class="tab-option">Downhole Logging</li>
+                    </a>
+                    <a href="landsurvey.html">
+                        <li class="tab-option">Land Surveys</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- topone start  -->
+        <div class="text-content">
+            <h1>Discover the Possibilities</h1>
+            <p class="d-flex justify-content-evenly">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                eligendi excepturi non rerum
+                explicabo libero cum quos vero nisi. Cupiditate corporis nobis natus saepe assumenda in unde eos
+                illo tempora! This is some text content on the left side.</p>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!-- body -************************ end  -->
 
 
 
@@ -228,16 +320,18 @@
                     <div class="col-md-4">
                         <div class="footer-contact">
                             <h2>Office Contact</h2>
-                            <p><i class="fa fa-map-marker-alt" style="color: white;"></i> 
+                            <p><i class="fa fa-map-marker-alt" style="color: white;"></i>
                                 <a style="color: white;">
-                                #725, 7TH FLOOR -HAYAT BOULEVARD 1A.A,
-                                NISHAMA TOWN SQUARE -AL YELAYISS 2 STREET,
-                                DUBAI - UAE
-                            </a>
+                                    #725, 7TH FLOOR -HAYAT BOULEVARD 1A.A,
+                                    NISHAMA TOWN SQUARE -AL YELAYISS 2 STREET,
+                                    DUBAI - UAE
+                                </a>
                             </p>
 
-                            <p><i class="fa fa-phone-alt" style="color: white;"></i> <a style="color: white;" href="">+971 544290205 </a></p>
-                            <p><i class="fa fa-envelope" style="color: white;"></i> <a style="color: white;" href="">info@mhs-gpr.com</a></p>
+                            <p><i class="fa fa-phone-alt" style="color: white;"></i> <a style="color: white;"
+                                    href="">+971 544290205 </a></p>
+                            <p><i class="fa fa-envelope" style="color: white;"></i> <a style="color: white;"
+                                    href="">info@mhs-gpr.com</a></p>
                         </div>
                     </div>
                     <div class="col-md-4">
