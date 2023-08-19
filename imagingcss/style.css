@@ -2750,6 +2750,11 @@ img{
 	margin-bottom:20px;
 }
 
+.featured-image-box{
+	display: inline;
+	float: left;
+}
+
 .featured-gallery .featured-image-box .image img{
 	width:100%;
 }
