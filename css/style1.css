@@ -352,6 +352,7 @@ p {
     height: fit-content;
     margin-right: 30px;
     flex-basis: 100%; /* Change to occupy full width on smaller screens */
+    border-radius: 4%;
 }
 
 .tab-option {
