@@ -547,6 +547,34 @@
                 opacity: 1;
                 pointer-events: auto;
             }
+
+            /* Original styles */
+
+/* Media query for screens up to 768px */
+@media (max-width: 768px) {
+    .card1-container {
+        justify-content: center;
+    }
+    
+    .card1 {
+        width: 100%; /* Full width on smaller screens */
+        margin: 10px 0; /* Remove horizontal margin */
+    }
+    
+    .card1-logo {
+        position: relative; /* Adjust position for smaller screens */
+        bottom: initial;
+        left: initial;
+        width: auto;
+        height: auto;
+        padding: 5px;
+    }
+    
+    .card1-logo h3 {
+        font-size: 80%; /* Adjust font size */
+    }
+}
+
     
 
         </style>
