@@ -1114,8 +1114,9 @@ a:focus {
 /*******************************/
 .faqs {
     position: relative;
-    width: 100%;
+    width: 80%;
     padding: 45px 0;
+    margin-left: 11.5%;
 }
 
 .faqs .row {
