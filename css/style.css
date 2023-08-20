@@ -1159,7 +1159,15 @@ a:focus {
     margin-bottom: 15px;
     border: none;
     border-radius: 0;
+    border: 1px solid #ddd;
+    transition: box-shadow 0.3s, border-color 0.3s; /* Add border-color to the transition property */
 }
+
+.faqs .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    border-color: teal; /* Change border color on hover */
+}
+
 
 .faqs .card:last-child {
     margin-bottom: 0;
