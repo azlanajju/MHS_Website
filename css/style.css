@@ -249,13 +249,12 @@ a:focus {
     background: #000;
 }
 .dropdown-menu a.dropdown-item {
-    color: teal;
+    color: white;
 }
 
 .dropdown-menu a.dropdown-item:hover {
-    background-color: black;
+    background-color: teal;
     color: white;
-    text-decoration: underline;
     border-color: blue;
 }
 
