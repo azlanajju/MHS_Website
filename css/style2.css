@@ -1949,3 +1949,10 @@ a:focus {
         text-align: center;
     }
 }
+
+
+/* =============== TEXT CSS ============== */
+
+.justify-text-custom{
+    text-align: justify;
+}
