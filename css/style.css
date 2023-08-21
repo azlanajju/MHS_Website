@@ -695,10 +695,12 @@ a:focus {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 4%;
 }
 
 .about .about-text p {
     font-size: 16px;
+    text-align: justify;
 }
 
 .about .about-text a.btn {
