@@ -1956,3 +1956,18 @@ a:focus {
 .justify-text-custom{
     text-align: justify;
 }
+
+
+.container-map{
+    margin: 20px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+    border-radius: 15px;    
+}
+
+iframe{
+    border-radius: 15px;
+}
